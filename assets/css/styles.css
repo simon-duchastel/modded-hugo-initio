@@ -249,6 +249,10 @@ a:hover {
   border-radius: none;
 }
 
+#head #logo {
+  background-color: #ffffff7a;
+}
+
 #head .title {
   font-family: Alice, Georgia, serif;
   font-size: 49px;
@@ -263,7 +267,7 @@ a:hover {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.2em;
-  color: #7C7C7C;
+  color: #333333;
   margin: 5px 0 0;
 }
 #head .tagline b {
@@ -808,6 +812,7 @@ footer.entry-meta .meta-in {
 }
 .follow-me-icons {
   font-size: 30px;
+  margin: 0 0 0 0;
 }
 .follow-me-icons i {
   padding: 15px 0;

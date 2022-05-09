@@ -1,10 +1,11 @@
 <header id="header">
   <div id="head" class="parallax" data-parallax-speed="2" style="background-image:url('{{ .Site.BaseURL }}{{ .Site.Params.banner }}');">
     <h1 id="logo" class="text-center">
-      <img class='img-{{ .Site.Params.avatarclass | default "circle"}}' src="{{ .Site.BaseURL }}{{ .Site.Params.avatar }}" alt="">
+      {{ if not (eq (.Site.Params.avatarclass | default "none") "none") }}
+        <img class='img-{{ .Site.Params.avatarclass | default "circle"}}' src="{{ .Site.BaseURL }}{{ .Site.Params.avatar }}" alt="">
+      {{ end }}
       <span class="title">{{ .Site.Params.name }}</span>
-      <span class="tagline">{{ .Site.Params.description }}<br>
-        <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+      <span class="tagline">{{ .Site.Params.description }}
       </span>
    </h1>
 </div>
